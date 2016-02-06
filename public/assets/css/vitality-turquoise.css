@@ -333,9 +333,9 @@ header .scroll-down .btn:hover {
     text-align: center;
     width: 50%;
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: bottom;
+    top: 80%;
+    left: 1%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
