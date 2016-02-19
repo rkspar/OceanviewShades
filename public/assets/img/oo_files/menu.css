@@ -1,0 +1,201 @@
+/* Reset code to remove theme inherent styling */
+.dcjq-mega-menu ul.menu ul, .dcjq-mega-menu ul.menu li {
+list-style: none; 
+padding: 0; 
+margin: 0;
+}
+.dcjq-mega-menu ul.menu ul {
+display: none; /* Hides non-mega links */
+}
+.dcjq-mega-menu ul.menu .sub ul {
+display: block; /* overrides above hide */
+}
+
+/* Main menu styles */
+.dcjq-mega-menu ul.menu {
+	width:900px;
+	height: 40px;
+	position: relative; /* Important - required for positioning of mega menu */
+	font-size:19px;
+	text-transform:uppercase;
+	font-family: 'optimaregular';
+	line-height: 16px;
+	float:right;
+}
+.dcjq-mega-menu ul.menu li {
+	float: right;
+	border-right-style: none;
+}
+.dcjq-mega-menu ul.menu li a.activemenu{
+float: left; 
+display: block;
+padding-left:12px;
+padding-right:12px;
+padding-top:10px;
+padding-bottom:10px;
+background: url(images/bg_black.png) repeat-x 100% 0; 
+color:#d0e484;
+text-decoration: none;
+}
+.dcjq-mega-menu ul.menu li a {
+float: left; 
+display: block;
+padding-left:12px;
+padding-right:12px;
+padding-top:10px;
+padding-bottom:10px;
+background: url(images/bg_black.png) repeat-x 100% 0; 
+color: #fff;
+text-decoration: none;
+}
+.dcjq-mega-menu ul.menu li.mega-hover a, .dcjq-mega-menu ul.menu li a:hover {
+background-position: 100% -40px; 
+color: #000; 
+text-shadow: none;
+}
+
+
+/* Mega Menu Styling */
+/* Mega Drop Down Container */
+.dcjq-mega-menu ul.menu li .sub-container {
+position: absolute; /* Required */
+margin-left: 0px;
+}
+.dcjq-mega-menu ul.menu li .sub {
+background-image:url(images/white_trans.png);
+padding: 20px 20px 20px 10px;
+font-size:13px;
+font-family:Arial, Helvetica, sans-serif;
+color:#3e3e3e;
+}
+.dcjq-mega-menu ul.menu li .sub-container.mega .sub {
+padding: 20px 10px 0 0;
+}
+.dcjq-mega-menu ul.menu li .sub .row { /* Clear the sub-menu floats */
+width: 100%; 
+overflow: hidden; 
+clear: both;
+}
+.dcjq-mega-menu ul.menu li .sub li {
+float: none; 
+font-size: 1em; 
+}
+/* Sub-menu Headers */
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr { /* Sub-menu headers - i.e. 2nd level navigation */
+float: left; /* Float the sub-menus and give them a fixed width to from the mega menu rows */
+width: 260px;
+margin: 0 10px 20px 10px;
+border: 1px solid #ccc; 
+}
+.dcjq-mega-menu ul.menu li .sub a { /* Clear the styles from the top-level links and set the font styles */
+background: none; 
+border: none; 
+text-shadow: none; 
+color: #3e3e3e; 
+display: block; 
+float: none; 
+text-decoration: none; 
+font-size: 0.9em; 
+}
+
+.dcjq-mega-menu ul.menu li .sub a:hover { /* Clear the styles from the top-level links and set the font styles */
+background: none; 
+border: none; 
+text-shadow: none; 
+color: #89ab07; 
+display: block; 
+float: none; 
+text-decoration: none; 
+font-size: 0.9em; 
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a {
+padding: 7px 10px; 
+margin-bottom: 5px; 
+border-bottom: 1px solid #ccc; 
+text-transform: uppercase; 
+color: #000; 
+background: #EAEAEA url(images/bg_hdr.png) repeat-x center center;
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #000; 
+text-shadow: none;
+}
+
+
+/* Add the individual sub-menu backgrounds */
+.dcjq-mega-menu ul.menu li .sub li#menu-item-1 {
+background: url(images/bg_coupe.jpg) no-repeat 135px 40px;
+}
+.dcjq-mega-menu ul.menu li .sub li#menu-item-2 {
+background: url(images/bg_sedan.jpg) no-repeat 135px 40px;
+}
+.dcjq-mega-menu ul.menu li .sub li#menu-item-3 {
+background: url(images/bg_convert.jpg) no-repeat 135px 40px;
+}
+.dcjq-mega-menu ul.menu li .sub li#menu-item-4 {
+background: url(images/bg_suv.jpg) no-repeat 135px 40px;
+}
+.dcjq-mega-menu ul.menu li .sub li#menu-item-5 {
+background: url(images/bg_pickup.jpg) no-repeat 135px 40px;
+}
+.dcjq-mega-menu ul.menu li .sub li#menu-item-6 {
+background: url(images/bg_sports.jpg) no-repeat 135px 40px;
+}
+
+/* Style the 3rd level links */
+.dcjq-mega-menu ul.menu li .sub li ul li {
+margin-right: 90px;
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a {
+color: #444;
+font-weight: normal; 
+padding: 3px 0 3px 25px; 
+background: url(images/bullet.png) no-repeat 10px 8px; 
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a:hover {
+color: #89ab07;
+background-image: url(images/bullet_on.png); 
+}
+
+/* Styling for items with only 2 levels */
+.dcjq-mega-menu ul.menu li .sub-container.non-mega .sub {
+padding: 20px 20px 20px 10px;
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li {
+width: 190px; /* Set the drop down width */
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a {
+	font-weight:bold;
+padding: 7px 10px; 
+margin-bottom: 5px; 
+border-bottom: 1px solid #ccc; 
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a:hover {
+	font-weight:bold;
+color: #89ab07;
+padding: 7px 10px; 
+margin-bottom: 5px; 
+border-bottom: 1px solid #ccc; 
+}
+#menuitem {
+	border-bottom:solid 1px #999;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight:bold;
+	}
+	#subitem  {
+		margin-left:50px;
+	font-weight:bold;
+	}
+	#subsubitem  {
+		margin-left:80px;
+		font-size:12px;
+	}
+	
+	#intmenu #subitem {
+		font-weight:normal;	
+	}
+	
+	#intmenu #menuitem {
+		font-weight:normal;	
+	}
