@@ -1019,7 +1019,7 @@ footer.footer .copyright p.small {
 .btn-outline-light {
   color: #78A193;
   border: 1px solid #78A193;
-  background: transparent;
+  background: white;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
