@@ -17,7 +17,7 @@ section {
   padding: 100px 0;
 }
 .bg-gray {
-  background-color: #78A193;
+  background-color: #fff;
 }
 .bg-dark {
   color: white;
@@ -1017,8 +1017,8 @@ footer.footer .copyright p.small {
   }
 }
 .btn-outline-light {
-  color: white;
-  border: 1px solid white;
+  color: #78A193;
+  border: 1px solid #78A193;
   background: transparent;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
